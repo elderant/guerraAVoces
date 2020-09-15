@@ -1,0 +1,37 @@
+{
+  "deploy.reloaded": {
+      "packages": [
+          {
+              "name": "GuerraVoces Webpage",
+              "description": "The wp folder",
+
+              "files": [
+                  "**/*.php",
+                  "**/*.css",
+                  "**/*.js",
+                  "**/*.log"
+              ],
+              "exclude": [
+                  // "**/!(wp-config).php",
+                  // "**/!(debug).log",
+              ],
+
+              "deployOnSave": [ "guerraavocesWebpage" ],
+              //"syncWhenOpen": "guerraavocesWebpage",
+          }
+      ],
+
+      "targets": [
+          {
+              "type": "sftp",
+              "name": "guerraavocesWebpage",
+              "description": "Wp-folder",
+              "host": "45.55.218.177", 
+              "port": 22,
+              "user": "jabali_guerra", 
+              "password": "Morimosenjesus84/",
+              "dir": "/public_html/"
+          }
+      ]
+  }
+}

@@ -1,0 +1,62 @@
+/********************************************************************************************
+ 0. STYLES FOR MOBILE DEVICES - media screen max-width: 1024px (removes animation for mobile devices) (line 24)
+ 1. STYLES FOR MOBILE DEVICES - media screen max width: 400px (line 55)
+ 2. STYLES FOR MOBILE DEVICES - media screen min width: 400px / max width: 568px (line 295)
+ 3. STYLES FOR MOBILE DEVICES - media screen min width: 568px / max width: 600px (line 541)
+ 4. STYLES FOR MOBILE DEVICES - media screen min width: 600px / max width: 700px (line 809)
+ 5. STYLES FOR MOBILE DEVICES - media screen min width: 700px / max width: 768px (line 1118)
+ 6. STYLES FOR MOBILE DEVICES - media screen min width: 768px / max width: 900px (line 1423)
+ 7. STYLES FOR MOBILE DEVICES - media screen min width: 900px / max width: 1024px (line 1747)
+ 8. STYLES FOR MOBILE DEVICES - media screen min width: 1024px / max width: 1200px (line 2077)
+ 9. STYLES FOR MOBILE DEVICES - media screen min width: 1200px / max width: 1280px (line 2472)
+ 10. STYLES FOR MOBILE DEVICES - media screen min width: 1280px / max width: 1366px (line 2574)
+ 11. STYLES FOR MOBILE DEVICES - media screen min width: 1336px / max width: 1536px (line 2806) 
+ 12. STYLES FOR MOBILE DEVICES - media screen min width: 1536px / max width: 1680px (line 3141)
+ 13. STYLES FOR MOBILE DEVICES - media screen min width: 1680px / max width: 1900px (line 3471) 
+ ---
+ 14. NAVIGATION MEDIA QUERIES (line 3801)
+ 15. FEATURES MEDIA QUERIES (line 3810)
+ 16. TIMELINE MEDIA QUERIES (line 3859)
+*********************************************************************************************/
+
+
+
+/*-- 0. Mobile menu --*/
+@media screen and (max-width: 1199px) {}
+
+/*-- 1. STYLES FOR MOBILE DEVICES - media screen max-width: 768px --*/
+@media screen and (max-width: 768px) {}
+
+
+
+/*-- 1. STYLES FOR MOBILE DEVICES - media screen max width: 400px --*/
+@media only screen and (max-width: 400px) {}
+
+
+
+/*-- 3. STYLES FOR MOBILE DEVICES - media screen min width: 401px / max width: 575px --*/
+@media screen and (min-width: 401px) and (max-width: 575px) {}
+
+/*-- 4. STYLES FOR MOBILE DEVICES - media screen min width: 576px / max width: 649px --*/
+@media screen and (min-width: 576px) and (max-width: 649px) {}
+
+/*-- 5. STYLES FOR MOBILE DEVICES - media screen min width: 650px / max width: 767px --*/
+@media screen and (min-width: 650px) and (max-width: 767px) {}
+
+/*-- 6. STYLES FOR MOBILE DEVICES - media screen min width: 768px / max width: 991px --*/
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/*-- 7. STYLES FOR MOBILE DEVICES - media screen min width: 992px / max width: 1199px --*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/*-- 8. STYLES FOR MOBILE DEVICES - media screen min width: 1200px / max width: 1279px --*/
+@media screen and (min-width: 1200px) and (max-width: 1279px) {}
+
+/*-- 9. STYLES FOR MOBILE DEVICES - media screen min width: 1280px / max width: 1365px --*/
+@media screen and (min-width: 1280px) and (max-width: 1365px) {}
+
+/*-- 10. STYLES FOR MOBILE DEVICES - media screen min width: 1366px / max width: 1535px --*/
+@media screen and (min-width: 1366px) and (max-width: 1535px) {}
+
+/*-- 11. STYLES FOR MOBILE DEVICES - media screen min width: 1536px / max width: 1679px --*/
+@media screen and (min-width: 1536px) and (max-width: 1679px) {}
