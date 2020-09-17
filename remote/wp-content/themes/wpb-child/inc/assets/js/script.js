@@ -1,6 +1,4 @@
 ( function( $ ) {
-  window.debounce_timer = 0;
-
   function getUrlVars() {
     var vars = [], hash;
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
@@ -13,48 +11,47 @@
     return vars;
   } 
   
+  // var checkOffsetMenu = function (className) {
+  //   var topOfWindow = $(window).scrollTop();
+    
+  //   return function () {
+  //     var $this = $(this), 
+  //       imagePos = $this.offset().top,
+  //       imageEnd = $this.height() + $this.offset().top,
+  //       menuClass = $this.attr('data-menu');
+
+      
+  //     $('#masthead #menu-main-menu .menu-item.' + menuClass).toggleClass(className, (imagePos < topOfWindow + 50 && imageEnd > topOfWindow));
+  //     $this.toggleClass(className, (imagePos < topOfWindow + 50 && imageEnd > topOfWindow));
+  //   };
+  // }
+
   //************** Window Scroll ************************//
-	var goToTopDebouncer = function(event) {
-		if(window.debounce_timer) {
-			window.clearTimeout(debounce_timer);
-		}
-		
-		debounce_timer = window.setTimeout(function() {
-      if(window.scrollY > 500){
-        let $goToTop = $('#footer-widget .go-to-top');
-        if(!$goToTop.hasClass('display')) {
-          $goToTop.toggleClass('display');
-        }
-      }
-      else {
-        let $goToTop = $('#footer-widget .go-to-top');
-        if($goToTop.hasClass('display')) {
-          $goToTop.toggleClass('display');
-        }
-      }
-      //let $secondaryMenu = $('header .navbar.secondary');
-      //$secondaryMenu.toggleClass('sticky', window.scrollY > 120);
-      //console.log(window.scrollY);
-		}, 100);
-	}
-	
-	$(window).on( 'scroll', goToTopDebouncer );
+	$(window).on( 'scroll', function(){});
 
   //************** Document Ready ************************//
   $(document).ready(function () {
-    // if($('header#masthead').length > 0) {
-    //   $('header .navbar-toggler').on('click', function(event) {
-    //     let $toggler = $(event.currentTarget);
-    //     $toggler.parent(".navbar").toggleClass('show');
-    //   });
-    // }
+    if($('header#masthead').length > 0) {
+      // $('header .navbar-toggler').on('click', function(event) {
+      //   let $toggler = $(event.currentTarget);
+      //   $toggler.parents("header#masthead").toggleClass('show');
+      // });
 
-    if($('#footer-widget .go-to-top').length > 0) {
-      let $goToTop = $('#footer-widget .go-to-top');
-      $goToTop.on('click', function(event) {
-        $('html, body').animate({scrollTop:0}, '1000');
-      });
+      if($('.page-home').length > 0) {
+        "use strict";
+        $('a[href*="https://guerraavoces.co/#"]').bind('click', function(e) {
+          e.preventDefault();        
+          var target = $(this).attr("href"); //Get the target
+          var id = target.substring(24);
+          // console.log(id);
+          // perform animated scrolling by getting top-position of target-element and set it as scroll target
+          $('html, body').stop().animate({ scrollTop: $(id).offset().top }, 2000, function() {
+            location.hash = id;
+          });
+              
+          return false;
+        });
+      }
     }
-    
   });
 } (jQuery) );

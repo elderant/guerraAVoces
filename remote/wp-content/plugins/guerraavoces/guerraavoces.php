@@ -47,7 +47,7 @@ function guerra_load_template($template, $folder = '') {
 	}
 
 	// otherwise, build a path for the filename in a folder named "templates" in our plugin folder
-	$custom_template = siscovid_file_build_path(plugin_dir_path( __FILE__ ), 'templates', $folder, $filename);
+	$custom_template = guerra_file_build_path(plugin_dir_path( __FILE__ ), 'templates', $folder, $filename);
 	//$custom_template = sprintf('%stemplates%s/%s', plugin_dir_path( __FILE__ ), $folder, $filename);
 
 	// found? return our plugin's default template
@@ -76,14 +76,29 @@ function guerra_file_build_path(...$segments) {
 /************************************************************/
 
 function guerra_build_home_html ( $lang ) {
-	// $template_url = guerra_load_template('proyecto.php', 'home');
-	// load_template($template_url, true);
+	$template_url = guerra_load_template('intro.php', 'home');
+	load_template($template_url, true);
 
-	// $template_url = guerra_load_template('equipo.php', 'home');
-	// load_template($template_url, true);
+	$template_url = guerra_load_template('book.php', 'home');
+	load_template($template_url, true);
 
-	// $template_url = guerra_load_template('aliados.php', 'home');
-	// load_template($template_url, true);
+	$template_url = guerra_load_template('audio-book.php', 'home');
+  load_template($template_url, true);
+
+  $template_url = guerra_load_template('research.php', 'home');
+  load_template($template_url, true);
+  
+  $template_url = guerra_load_template('team.php', 'home');
+  load_template($template_url, true);
+  
+  $template_url = guerra_load_template('click.php', 'home');
+  load_template($template_url, true);
+  
+  $template_url = guerra_load_template('closing.php', 'home');
+  load_template($template_url, true);
+
+  $template_url = guerra_load_template('contact.php', 'home');
+  load_template($template_url, true);
 }
 add_shortcode( 'guerra_home', 'guerra_build_home_html' );
 

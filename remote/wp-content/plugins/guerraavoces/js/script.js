@@ -21,11 +21,44 @@
   }
 
   $(document).ready(function () {
-    
+    if($('#audiobook').length > 0){
+      //audio book carousel
+      $('#audiobook .carousel-container').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        vertical: true,
+        verticalSwiping: true,
+        prevArrow: '#audiobook .slick-prev',
+        nextArrow: '#audiobook .slick-next',
+      });
+    }
+
+    if($('#research').length > 0){
+      //audio book carousel
+      $('#research .carousel-container').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: '#research .slick-prev',
+        nextArrow: '#research .slick-next',
+      });
+    }
+
+    if($('#team').length > 0){
+      //audio book carousel
+      $('#team .carousel-container').slick({
+        infinite: false,
+        slidesToShow: 7,
+        slidesToScroll: 7,
+        prevArrow: '#team .slick-prev',
+        nextArrow: '#team .slick-next',
+      });
+    }
+
+
   });
 
-  $(window).scroll(function () {
-    
-  });
+  $(window).scroll(function () {});
 
 } (jQuery) );
