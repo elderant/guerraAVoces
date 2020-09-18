@@ -2,14 +2,14 @@
 	<div class="container-fluid">
     <div class="row first-row text-center">
       <div class="col-12">
-        <div class="title animated fadeIn">
+        <div class="title animate-in">
           <h2 class="uppercase"><?php _e('¿Qué es Click?', 'guerra');?></h2>
         </div>
       </div>
     </div>
     <div class="row subtitle-row text-center">
       <div class="col-12">
-        <div class="subtitle animated fadeIn">
+        <div class="subtitle animate-in">
           <h3 class="h2"><?php _e('Agencia de pedagogía', 'guerra');?></h3>
         </div>
       </div>

@@ -1,4 +1,4 @@
-.animated{
+.animated {
 	-webkit-animation-fill-mode:both;
 	-moz-animation-fill-mode:both;
 	-ms-animation-fill-mode:both;
@@ -11,7 +11,7 @@
 	animation-duration:2s;
 }
 
-.animated.hinge{
+.animated.hinge {
 	-webkit-animation-duration:2s;
 	-moz-animation-duration:2s;
 	-ms-animation-duration:2s;

@@ -2,12 +2,12 @@
 	<div class="container-fluid">
     <div class="row first-row text-center">
       <div class="col-12">
-        <div class="description animated fadeIn">
+        <div class="title animate-in">
           <h2 class="uppercase"><?php _e('El Libro', 'guerra');?></h2>
         </div>
       </div>
     </div>
-    <div class="row description-row first-description-row text-center">
+    <div class="row description-row first-description-row text-center animate-in">
       <div class="col-10 offset-1">
         <div class="image-container">
           <img src="/wp-content/uploads/home-book-background1.jpg" alt="<?php _e('Book description background 1','guerra');?>">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="row description-row second-description-row text-center">
+    <div class="row description-row second-description-row text-center animate-in">
       <div class="col-10 offset-1">
         <div class="image-container">
           <img src="/wp-content/uploads/home-book-background2.jpg" alt="<?php _e('Book description background 2','guerra');?>">
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="row description-row third-description-row text-center">
+    <div class="row description-row third-description-row text-center animate-in">
       <div class="col-10 offset-1">
         <div class="image-container">
           <img src="/wp-content/uploads/home-book-background1.jpg" alt="<?php _e('Book description background 3','guerra');?>">
@@ -41,7 +41,7 @@
     <div class="row audio-row">
       <div class="col-10 offset-1">
         <div class="iframe-container">
-          <!-- <iframe id="audiolibro" height="500" width="854" allowfullscreen allow="fullscreen" src="https://julianloboguerrero.github.io/aves/"></iframe> -->
+          <iframe allowfullscreen allow="fullscreen" src="//e.issuu.com/embed.html?d=guerra_a_voces._lectura_online&u=clickarte&backgroundColor=%00000000&backgroundColorFullscreen=%00000000&hideIssuuLogo=true"></iframe>
         </div>
       </div>
     </div>

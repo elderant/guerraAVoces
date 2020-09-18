@@ -4,79 +4,79 @@
       'class'     => 'introduccion',
       'src'       => '/wp-content/uploads/home-audio-intro.jpg',
       'src-label' => __('Introduction background image','guerra'),
-      'audio'     => '??',
+      'video'     => 'OKmdtpIEHYo',
     ),
     'capitulo1' => array(
       'class'     => 'capitulo-1',
       'src'       => '/wp-content/uploads/home-audio-chapter1.jpg',
       'src-label' => __('First chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => 'OgDWtsJnVYw',
     ),
     'capitulo2' => array(
       'class'     => 'capitulo-2',
       'src'       => '/wp-content/uploads/home-audio-chapter2.jpg',
       'src-label' => __('Second chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => 'TNCDKKCt8Nw',
     ),
     'capitulo3' => array(
       'class'     => 'capitulo-3',
       'src'       => '/wp-content/uploads/home-audio-chapter3.jpg',
       'src-label' => __('Third chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '4qpWpZV_GKQ',
     ),
     'capitulo4' => array(
       'class'     => 'capitulo-4',
       'src'       => '/wp-content/uploads/home-audio-chapter4.jpg',
       'src-label' => __('Fourth chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '4qpWpZV_GKQ',
     ),
     'capitulo5' => array(
       'class'     => 'capitulo-5',
       'src'       => '/wp-content/uploads/home-audio-chapter5.jpg',
       'src-label' => __('Fifth chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     'capitulo6' => array(
       'class'     => 'capitulo-6',
       'src'       => '/wp-content/uploads/home-audio-chapter6.jpg',
       'src-label' => __('Sixth chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     'capitulo7' => array(
       'class'     => 'capitulo-7',
       'src'       => '/wp-content/uploads/home-audio-chapter7.jpg',
       'src-label' => __('Seventh chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     'capitulo8' => array(
       'class'     => 'capitulo-8',
       'src'       => '/wp-content/uploads/home-audio-chapter8.jpg',
       'src-label' => __('Eight chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     'capitulo9' => array(
       'class'     => 'capitulo-9',
       'src'       => '/wp-content/uploads/home-audio-chapter9.jpg',
       'src-label' => __('Nineth chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     'capitulo10' => array(
       'class'     => 'capitulo-10',
       'src'       => '/wp-content/uploads/home-audio-chapter10.jpg',
       'src-label' => __('Tenth chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     'capitulo11' => array(
       'class'     => 'capitulo-11',
       'src'       => '/wp-content/uploads/home-audio-chapter11.jpg',
       'src-label' => __('Eleventh chapter background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     'final' => array(
       'class'     => 'final',
       'src'       => '/wp-content/uploads/home-audio-close.jpg',
       'src-label' => __('Closing background image','guerra'),
-      'audio'     => '??',
+      'video'     => '??',
     ),
     
     
@@ -88,7 +88,7 @@
 	<div class="container-fluid">
     <div class="row first-row text-center">
       <div class="col-12">
-        <div class="description animated fadeIn">
+        <div class="title animate-in">
           <h2 class="uppercase"><?php _e('Audiolibro', 'guerra');?></h2>
         </div>
       </div>
@@ -104,11 +104,7 @@
         <div class="carousel-container">
           <?php foreach($chapters as $chapter) :?>
             <div class="chapter-container <?php echo $chapter['class']?>">
-              <img src="<?php echo $chapter['src']?>" alt="<?php echo $chapter['src-label']?>">
-              <!-- <audio controls>
-                <source src="<?php echo $chapter['audio']?>" type="audio/ogg">
-                <?php _e('Su explorador no soporta el elemento de audio','guerra');?>
-              </audio> -->
+              <iframe src="https://www.youtube.com/embed/<?php echo $chapter['video']?>?controls=0&rel=0&modestbranding=1&" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           <?php endforeach;?>
         </div>

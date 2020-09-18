@@ -32,7 +32,7 @@
 	<div class="container-fluid">
     <div class="row first-row text-center">
       <div class="col-12">
-        <div class="description animated fadeIn">
+        <div class="title animate-in">
           <h2 class="uppercase"><?php _e('La investigación', 'guerra');?></h2>
         </div>
       </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="row research-image-row">
       <div class="col-10 offset-1">
-        <img src="/wp-content/uploads/home-research-main.jpg" alt="<?php _e('Resarch main image','guerra');?>">
+        <img class="animate-in" src="/wp-content/uploads/home-research-main.jpg" alt="<?php _e('Resarch main image','guerra');?>">
       </div>
     </div>
     <div class="row research-description-row text-center">

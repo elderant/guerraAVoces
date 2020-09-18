@@ -78,6 +78,11 @@ section#intro {
   outline: none;
 }
 
+#audiobook .chapter-container iframe {
+  width: 100%;
+  height: calc(83vw * 0.5625);
+}
+
 #audiobook .slick-arrow {
   font-size: 11rem;
 }
@@ -133,9 +138,18 @@ section#intro {
   padding: 0 calc(8.333333% - 1rem) 0;
 }
 
+#team .carousel-row .carousel-container .slick-list {
+  padding: 0.5rem 0;
+}
+
 #team .carousel-row .member-container {
   font-size: 2rem;
   outline: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+#team .carousel-row .member-container:hover {
+  transform: scale(1.05);
 }
 
 #team .carousel-row .member-container p.name {

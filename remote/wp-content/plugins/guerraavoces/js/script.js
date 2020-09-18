@@ -20,7 +20,25 @@
     });
   }
 
+  var checkOffset = function (className) {
+    var topOfWindow = $(window).scrollTop();
+    
+    return function () {
+      var $this = $(this),
+        imagePos = $this.offset().top;
+
+      if($(window).width() > 768) {
+        $this.toggleClass(className, (imagePos < topOfWindow + 900));
+      }
+      else {
+        $this.toggleClass(className, (imagePos < topOfWindow + 1250));
+      }
+    };
+  }
+
   $(document).ready(function () {
+    $('.page-home section .title').each(checkOffset('animated fadeIn'));
+    
     if($('#audiobook').length > 0){
       //audio book carousel
       $('#audiobook .carousel-container').slick({
@@ -59,6 +77,19 @@
 
   });
 
-  $(window).scroll(function () {});
+  $(window).scroll(function () {
+    $('.page-home section .title').each(checkOffset('animated fadeIn'));
+    $('.page-home section .subtitle').each(checkOffset('animated fadeIn'));
+    $('#contact .description').each(checkOffset('animated fadeIn'));
+    
+    $('#book .first-description-row, #book .third-description-row').each(checkOffset('animated slideInRight'));
+    $('#book .second-description-row').each(checkOffset('animated slideInLeft'));
+
+    $('#research .research-image-row img').each(checkOffset('animated flipInY'));
+
+    $('#closing img').each(checkOffset('animated slideInDown'));
+    
+    $('#contact .content-row').each(checkOffset('animated bounceIn'));
+  });
 
 } (jQuery) );

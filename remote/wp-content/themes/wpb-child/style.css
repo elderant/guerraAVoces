@@ -165,6 +165,16 @@ a:hover {
   color: var(--yellow-light-shade);
 }
 
+.animate-in {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.animated {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 /******************** Shared ********************/
 /* shared : body */
 .page-template-fullwidth {

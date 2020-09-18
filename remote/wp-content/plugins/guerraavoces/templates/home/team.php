@@ -56,7 +56,7 @@
 	<div class="container-fluid">
     <div class="row first-row text-center">
       <div class="col-12">
-        <div class="title animated fadeIn">
+        <div class="title animate-in">
           <h2 class="uppercase"><?php _e('El Equipo', 'guerra');?></h2>
         </div>
       </div>
