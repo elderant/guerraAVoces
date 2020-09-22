@@ -36,8 +36,8 @@
               <?php endif; ?>
 
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          <button class="wp-child-navbar-toggler d-block d-xl-none collapsed" type="button" data-toggle="custom-collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="wp-child-navbar-toggler-icon"></div>
           </button>
 
           <?php
@@ -47,13 +47,13 @@
           'container_id'    => 'main-nav',
           'container_class' => 'collapse navbar-collapse',
           'menu_id'         => false,
-          'menu_class'      => 'navbar-nav justify-content-around',
+          'menu_class'      => 'navbar-nav flex-column flex-xl-row align-items-end justify-content-around justify-content-xl-around pr-5 pr-xl-0',
           'depth'           => 3,
           'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
           'walker'          => new wp_bootstrap_navwalker()
           ));
           ?>
-          <div class="navbar-brand-alt m-0 pl-3">
+          <div class="navbar-brand-alt m-0 pl-3 d-none d-xl-block">
             <a href="https://clickarte.co/tienda" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="123.41" height="112.45" viewBox="0 0 123.41 112.45">
                 <path class="a" d="M11.77,5.89A5.89,5.89,0,1,1,5.89,0,5.88,5.88,0,0,1,11.77,5.89Z"/>

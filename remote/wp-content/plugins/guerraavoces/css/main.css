@@ -32,6 +32,10 @@ section#intro {
   padding-top: 6rem;
 }
 
+#intro .image-row img {
+  max-width: 600px;
+}
+
 /* Home : book */
 #book .description-row,
 #book .audio-row {
@@ -43,7 +47,7 @@ section#intro {
   top: 50%;
   width: 44%;
   transform: translate(0px, -50%);
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
 }
 
 #book .description-row .description-container.left {
@@ -99,7 +103,7 @@ section#intro {
 
 #research .research-intro-row,
 #research .research-description-row {
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
 }
 
 #research .carousel-row {
@@ -143,7 +147,7 @@ section#intro {
 }
 
 #team .carousel-row .member-container {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   outline: none;
   transition: transform 0.5s ease-in-out;
 }
@@ -168,7 +172,7 @@ section#intro {
 /* home : click */
 #click .content-row {
   padding-top: 5rem;
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
 }
 
 #click .content-row iframe {
@@ -178,7 +182,7 @@ section#intro {
 
 /* home : contact */
 #contact .text-row {
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
 }
 
 #contact .content-row {

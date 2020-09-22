@@ -84,15 +84,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 15rem;
+  font-size: 12rem;
 }
 
 h2, .h2 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h3, .h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+h4, .h4 {
+  font-size: 2rem;
+}
+
+h5, .h5 {
+  font-size: 1.75rem;
+}
+
+h6, .h6 {
+  font-size: 1.5rem;
 }
 
 label {
@@ -181,6 +193,15 @@ a:hover {
   background-color: var(--black);
 }
 
+#content.site-content {
+  transform: translate(0, 0);
+  transition: transform 1s ease-in-out;
+}
+
+#content.site-content.menu-dispayed {
+  transform: translate(-240px, 0);
+}
+
 .page-template-fullwidth #content.site-content {
 	padding: 0;
 }
@@ -247,6 +268,53 @@ header#masthead {
   fill: var(--yellow-light-shade);
 }
 
+#masthead .wp-child-navbar-toggler {
+  height: 50px;
+  width: 50px;
+  border: none;
+  padding: 0;
+  outline: none;
+  background: transparent;
+}
+
+#masthead .wp-child-navbar-toggler-icon {
+  display: block;
+  position: relative;
+  height: 0px;
+  width: 40px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: var(--yellow);
+  transition: all 1s ease-in-out;
+}
+
+#masthead .wp-child-navbar-toggler-icon::before,
+#masthead .wp-child-navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 4px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: var(--yellow);
+  transition: all 1s ease-in-out;
+}
+
+#masthead .wp-child-navbar-toggler-icon::before {
+  transform: translate(-50%, 0) rotate(405deg);
+}
+#masthead .wp-child-navbar-toggler-icon::after {
+  transform: translate(-50%, 0) rotate(495deg);
+}
+
+#masthead .wp-child-navbar-toggler.collapsed .wp-child-navbar-toggler-icon {
+  height: 4px;
+}
+
+#masthead .wp-child-navbar-toggler.collapsed .wp-child-navbar-toggler-icon::before {transform: translate(-50%, -400%);}
+#masthead .wp-child-navbar-toggler.collapsed .wp-child-navbar-toggler-icon::after {transform: translate(-50%, calc(400% - 4px));}
+
 /* shared : footer */
 footer#colophon.site-footer {
   display: none;
@@ -257,7 +325,7 @@ section .slick-arrow {
   z-index: 5;
   position: absolute;
   font-size: 7rem;
-  line-height: 0.6;
+  line-height: 0.9;
   color: var(--purple);
   cursor: pointer;
   transition: color 0.5s ease-in-out;
@@ -298,6 +366,7 @@ section .slick-arrow.slick-disabled {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .wpcf7-form .custom-form-row {

@@ -44,7 +44,7 @@
     ),
     'helena_rodriguez' => array(
       'class'     => 'helena_rodriguez odd',
-      'job'       => __('Correción y Revisión','guerra'),
+      'job'       => __('Corrección y Revisión','guerra'),
       'src'       => '/wp-content/uploads/home-team-helenaRodriguez.jpg',
       'src-label' => __('Helena Rodríguez Photo','guerra'),
       'name'      => __('Helena Rodríguez','guerra'),
@@ -71,10 +71,10 @@
         </div>
         <div class="carousel-container">
           <?php foreach($team as $member) :?>
-            <div class="member-container <?php echo $member['class']?>">
+            <div class="member-container h5 <?php echo $member['class']?>">
               <p class="job text-center"><?php echo $member['job']?></p>
               <img src="<?php echo $member['src']?>" alt="<?php echo $member['src-label']?>">
-              <p class="name text-center"><?php echo $member['name']?></p>
+              <p class="name text-center h5"><?php echo $member['name']?></p>
             </div>
           <?php endforeach;?>
         </div>

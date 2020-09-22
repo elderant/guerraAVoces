@@ -94,7 +94,7 @@
       </div>
     </div>
     <div class="row carousel-row">
-      <div class="col-10 offset-1">
+      <div class="col-12 offset-0 col-sm-10 offset-sm-1">
         <div class="slick-prev arrow top">
           <i class="fas fa-angle-double-up"></i>
         </div>

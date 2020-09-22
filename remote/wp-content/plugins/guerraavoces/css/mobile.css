@@ -16,44 +16,305 @@
 
 
 /*-- 0. STYLES FOR MOBILE DEVICES - media screen max-width: 768px --*/
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) { }
 
 
 /*-- 1. STYLES FOR MOBILE DEVICES - media screen max width: 400px --*/
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+  /* General */
+  .page-home section {
+    padding-bottom: 5rem;
+  }
+
+  #team .carousel-row,
+  #contact .content-row {
+    padding-top: 3rem;
+  }
+  
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 80%;
+  }
+
+  #intro .image-row img {
+    max-width: 250px;
+  }
+
+  /* book */
+  #book .description-row .description-container.right {
+    right: 2.2rem;
+  }
+
+  #book .description-row .description-container.left {
+    left: 2.2rem;
+  }
+
+  #book .description-row .description-container {
+    width: 65%;
+  }
+
+  #book .description-row.third-description-row .description-container {
+    right: 0;
+    width: 100%;
+  }
+
+  #book .description-row.third-description-row .description-container .h5 {
+    padding: 0 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  /* audiobook */
+  #audiobook .carousel-container {
+    padding: 3rem 0;
+  }
+
+  /* research */
+  #research .research-image-row, 
+  #research .research-description-row {
+    padding-top: 2rem;
+  }
+
+  #research .carousel-row .image-container {
+    padding: 0 3rem;
+  }
+}
 
 /*-- 2. STYLES FOR MOBILE DEVICES - media screen min width: 401px / max width: 575px --*/
-@media screen and (min-width: 401px) and (max-width: 575px) {}
+@media screen and (min-width: 401px) and (max-width: 575px) {
+  /* General */
+  .page-home section {
+    padding-bottom: 5rem;
+  }
+
+  #team .carousel-row,
+  #contact .content-row {
+    padding-top: 3rem;
+  }
+  
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 60%;
+  }
+
+  #intro .image-row img {
+    max-width: 300px;
+  }
+
+  /* book */
+  #book .description-row .description-container.right {
+    right: 2.2rem;
+  }
+
+  #book .description-row .description-container.left {
+    left: 2.2rem;
+  }
+
+  #book .description-row .description-container {
+    width: 65%;
+  }
+  
+  /* audiobook */
+  #audiobook .carousel-container {
+    padding: 3rem 0;
+  }
+
+  /* research */
+  #research .research-image-row, 
+  #research .research-description-row {
+    padding-top: 2rem;
+  }
+
+  #research .carousel-row .image-container {
+    padding: 0 3rem;
+  }
+}
 
 /*-- 3. STYLES FOR MOBILE DEVICES - media screen min width: 576px / max width: 649px --*/
-@media screen and (min-width: 576px) and (max-width: 649px) {}
+@media screen and (min-width: 576px) and (max-width: 649px) {
+  /* General */
+  .page-home section {
+    padding-bottom: 5rem;
+  }
+
+  #team .carousel-row,
+  #contact .content-row {
+    padding-top: 3rem;
+  }
+  
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 40%;
+  }
+
+  #intro .image-row img {
+    max-width: 400px;
+  }
+
+  /* book */
+  #book .description-row .description-container.right {
+    right: 2.2rem;
+  }
+
+  #book .description-row .description-container.left {
+    left: 2.2rem;
+  }
+
+  #book .description-row .description-container {
+    width: 65%;
+  }
+  
+  /* audiobook */
+  #audiobook .carousel-container {
+    padding: 5rem 0;
+  }
+
+  /* research */
+  #research .carousel-row .image-container {
+    padding: 0 3rem;
+  }
+}
 
 /*-- 4. STYLES FOR MOBILE DEVICES - media screen min width: 650px / max width: 767px --*/
-@media screen and (min-width: 650px) and (max-width: 767px) {}
+@media screen and (min-width: 650px) and (max-width: 767px) {
+  /* General */
+  #team .carousel-row,
+  #contact .content-row {
+    padding-top: 3rem;
+  }
+  
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 40%;
+  }
+
+  #intro .image-row img {
+    max-width: 450px;
+  }
+
+  /* book */
+  #book .description-row .description-container.right {
+    right: 2.2rem;
+  }
+
+  #book .description-row .description-container.left {
+    left: 2.2rem;
+  }
+
+  #book .description-row .description-container {
+    width: 65%;
+  }
+  
+  /* audiobook */
+  #audiobook .carousel-container {
+    padding: 5rem 0;
+  }
+
+  /* research */
+  #research .carousel-row .image-container {
+    padding: 0 3rem;
+  }
+}
 
 
 /*-- 5. STYLES FOR MOBILE DEVICES - media screen min width: 768px / max width: 991px --*/
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 40%;
+  }
+
+  #intro .image-row img {
+    max-width: 500px;
+  }
+
+  /* book */
+  #book .description-row .description-container.right {
+    right: 2.2rem;
+  }
+
+  #book .description-row .description-container.left {
+    left: 2.2rem;
+  }
+
+  #book .description-row .description-container {
+    width: 65%;
+  }
+}
 
 
 /*-- 6. STYLES FOR MOBILE DEVICES - media screen min width: 992px / max width: 1199px --*/
-@media screen and (min-width: 992px) and (max-width: 1199px) {}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 35%;
+  }
+
+  /* book */
+  #book .description-row .description-container {
+    width: 50%;
+  }
+}
 
 
 /*-- 7. STYLES FOR MOBILE DEVICES - media screen min width: 1200px / max width: 1279px --*/
-@media screen and (min-width: 1200px) and (max-width: 1279px) {}
+@media screen and (min-width: 1200px) and (max-width: 1279px) {
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 50%;
+  }
+
+  /* book */
+  #book .description-row .description-container {
+    width: 50%;
+  }
+
+  /* research */
+  #research .carousel-row .image-container {
+    padding: 0 3rem;
+  }
+}
 
 
 /*-- 8. STYLES FOR MOBILE DEVICES - media screen min width: 1280px / max width: 1365px --*/
-@media screen and (min-width: 1280px) and (max-width: 1365px) {}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 50%;
+  }
+
+  /* book */
+  #book .description-row .description-container {
+    width: 50%;
+  }
+
+  /* research */
+  #research .carousel-row .image-container {
+    padding: 0 3rem;
+  }
+}
 
 
 /*-- 9. STYLES FOR MOBILE DEVICES - media screen min width: 1366px / max width: 1535px --*/
-@media screen and (min-width: 1366px) and (max-width: 1535px) {}
+@media screen and (min-width: 1366px) and (max-width: 1535px) {
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 50%;
+  }
+
+  /* book */
+  #book .description-row .description-container {
+    width: 50%;
+  }
+}
 
 
 /*-- 10. STYLES FOR MOBILE DEVICES - media screen min width: 1536px / max width: 1679px --*/
-@media screen and (min-width: 1536px) and (max-width: 1679px) {}
+@media screen and (min-width: 1536px) and (max-width: 1679px) {
+  /* intro */
+  #intro .second-row .quote {
+    max-width: 40%;
+  }
+}
 
 
 /*-- 11. STYLES FOR MOBILE DEVICES - media screen min width: 1680px / max width: 1919px --*/

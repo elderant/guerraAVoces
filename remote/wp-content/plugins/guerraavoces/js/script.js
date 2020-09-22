@@ -60,6 +60,22 @@
         slidesToScroll: 3,
         prevArrow: '#research .slick-prev',
         nextArrow: '#research .slick-next',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 401,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     }
 
@@ -71,6 +87,22 @@
         slidesToScroll: 7,
         prevArrow: '#team .slick-prev',
         nextArrow: '#team .slick-next',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 5
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          }
+        ]
       });
     }
 

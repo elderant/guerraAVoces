@@ -13,7 +13,7 @@ add_action( 'wp_enqueue_scripts', 'guerra_scripts' );
 function guerra_scripts () {
 	wp_enqueue_script ( 'guerra-js', plugins_url('/js/script.js', __FILE__), array('jquery'),  rand(111,9999), 'all' );
 	wp_enqueue_style ( 'guerra',  plugins_url('/css/main.css', __FILE__), array(),  rand(111,9999), 'all' );
-	//wp_enqueue_style ( 'guerra-mobile',  plugins_url('/css/mobile.css', __FILE__), array(),  rand(111,9999), 'all' );
+	wp_enqueue_style ( 'guerra-mobile',  plugins_url('/css/mobile.css', __FILE__), array(),  rand(111,9999), 'all' );
 
 	wp_localize_script( 'guerra-js', 'ajax_params', array('ajax_url' => admin_url( 'admin-ajax.php' )));
 

@@ -37,20 +37,20 @@
         </div>
       </div>
     </div>
-    <div class="row research-intro-row text-center">
-      <div class="col-10 offset-1">
+    <div class="row research-intro-row text-center h4">
+      <div class="col-12 offset-0 col-sm-10 offset-sm-1">
         <p>
           <?php _e('La recopilación de archivos, entrevistas y testimonios de cada uno de los actores del conflicto fue la base para el libro. Sin embargo, esta investigación nos cambió a todos. En cada conversación nos sumergimos en los años de la guerra, las circunstancias de cada persona, sus miedos, dilemas y decisiones.','guerra');?>
         </p>
       </div>
     </div>
     <div class="row research-image-row">
-      <div class="col-10 offset-1">
+      <div class="col-12 offset-0 col-sm-10 offset-sm-1">
         <img class="animate-in" src="/wp-content/uploads/home-research-main.jpg" alt="<?php _e('Resarch main image','guerra');?>">
       </div>
     </div>
-    <div class="row research-description-row text-center">
-      <div class="col-10 offset-1">
+    <div class="row research-description-row text-center h4">
+      <div class="col-12 offset-0 col-sm-10 offset-sm-1">
         <p>
           <?php _e('El libro presenta los testimonios de militares, guerrilleros, paramilitares, campesinos, líderes, niños y jóvenes de Colombia al inicio de los años 2000 y busca resaltar las voces de aquellos que escucharon, sintieron y presenciaron la guerra. En cada sonido, voz y relato, nos vemos reflejados en las historias de quienes las narran y, por eso, el libro va más allá de un ejercicio de lectura y se convierte en un ejercicio de escucha y apropiación.','guerra');?>
         </p>
